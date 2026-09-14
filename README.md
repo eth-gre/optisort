@@ -1,21 +1,25 @@
-                          _   _                 _
-                         (_) (_)               | |
-   ___  _ __   ___ _ __   _   _ ___  ___  _ __ | |_
-  / _ \| '_ \ / __| '_ \ | | | / __|/ _ \| '__|| __|
- | (_) | |_) |\__ \ |_) || |_| \__ \ (_) | |    | |_
-  \___/| .__/ |___/ .__/  \_,_|___/\___/|_|     \__|
-       | |        | |
-       |_|        |_|
+```  
+                       /$$     /$$                                 /$$    
+                      | $$    |__/                                | $$    
+  /$$$$$$   /$$$$$$  /$$$$$$   /$$  /$$$$$$$  /$$$$$$   /$$$$$$  /$$$$$$  
+ /$$__  $$ /$$__  $$|_  $$_/  | $$ /$$_____/ /$$__  $$ /$$__  $$|_  $$_/  
+| $$  \ $$| $$  \ $$  | $$    | $$|  $$$$$$ | $$  \ $$| $$  \__/  | $$    
+| $$  | $$| $$  | $$  | $$ /$$| $$ \____  $$| $$  | $$| $$        | $$ /$$
+|  $$$$$$/| $$$$$$$/  |  $$$$/| $$ /$$$$$$$/|  $$$$$$/| $$        |  $$$$/
+ \______/ | $$____/    \___/  |__/|_______/  \______/ |__/         \___/  
+          | $$                                                            
+          | $$                                                            
+          |__/                                                            
+```
 
-
-## a collection of 5 highly optimised O(n*) sorting algorithms produced by an unreleased internal research model by ███████.ai
+## 5 highly optimised O(n*) sorting algorithms produced by an unreleased internal research model
 
 <p align="center">
   <img alt="build" src="https://img.shields.io/badge/build-passing%20(on%20our%20machine)-brightgreen">
   <img alt="complexity" src="https://img.shields.io/badge/complexity-O(n)*-blue">
   <img alt="written in" src="https://img.shields.io/badge/written%20in-/rust-orange">
   <img alt="benchmarked on" src="https://img.shields.io/badge/benchmarked%20on-vibes-purple">
-  <img alt="peer review" src="https://img.shields.io/badge/peer%20reviewed-by%20uranus-lightgrey">
+  <img alt="peer review" src="https://img.shields.io/badge/peer%20reviewed-by%20nobody-lightgrey">
 </p>
 
 a swarm of 12,000 instances of the model, internally refered to as 'uranus', was given 100 hours and unlimited compute budget to build highly optimised sorting algorithms for real-world use cases and workloads.
@@ -28,28 +32,24 @@ they produced five algorithms:
 4. `very_long_wait_sort` pre-processes the list so that the actual sorting step takes a fraction of the time.
 5. `one_line_sort` is a miracle. O(1) performance. throw anything at it. one line of code does the work.
 
-all of them are written in `/rust` for maximum performance. every algorithm is compiled to native machine code when it executes for optimised bare metal performance.
-
-
-
 
 ---
 
 ## faq
 
-**is this real?**
+### **is this real?**
 yes.
 
-**why /rust and not /src?**
+### **why is the code written in /rust**
 rust uses LLVM under the hood. this makes optisort *blazingly* fast. every algorithm compiles to native machine code at runtime via "the python interpreter."
 
-**can I use this in production?**
+### **can I use this in production?**
 you can. we are not going to stop you. we will not turn up in court when you sue us either.
 
-**is it really O(n) or O(1)?**
+### **is it really O(n) or O(1)?**
 yes. where n is the length of the array
 
-**are there benchmarks?**
+### **are there benchmarks?**
 yes. check out `/benchmarks` for a thorough breackdown
 
 
