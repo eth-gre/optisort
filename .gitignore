@@ -9,5 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
+# Test stuff
+.pytest_cache
+
 # Mac stuff
 .DS_Store
