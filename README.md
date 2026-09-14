@@ -1,4 +1,3 @@
-```
                           _   _                 _
                          (_) (_)               | |
    ___  _ __   ___ _ __   _   _ ___  ___  _ __ | |_
@@ -7,9 +6,17 @@
   \___/| .__/ |___/ .__/  \_,_|___/\___/|_|     \__|
        | |        | |
        |_|        |_|
-```
 
-## a collection of 5 highly optimised O(n) sorting algorithms produced by an unreleased internal research model by ███████.ai
+
+## a collection of 5 highly optimised O(n*) sorting algorithms produced by an unreleased internal research model by ███████.ai
+
+<p align="center">
+  <img alt="build" src="https://img.shields.io/badge/build-passing%20(on%20our%20machine)-brightgreen">
+  <img alt="complexity" src="https://img.shields.io/badge/complexity-O(n)*-blue">
+  <img alt="written in" src="https://img.shields.io/badge/written%20in-/rust-orange">
+  <img alt="benchmarked on" src="https://img.shields.io/badge/benchmarked%20on-vibes-purple">
+  <img alt="peer review" src="https://img.shields.io/badge/peer%20reviewed-by%20uranus-lightgrey">
+</p>
 
 a swarm of 12,000 instances of the model, internally refered to as 'uranus', was given 100 hours and unlimited compute budget to build highly optimised sorting algorithms for real-world use cases and workloads.
 
@@ -24,15 +31,7 @@ they produced five algorithms:
 all of them are written in `/rust` for maximum performance. every algorithm is compiled to native machine code when it executes for optimised bare metal performance.
 
 
-<p align="center">
-  <img alt="build" src="https://img.shields.io/badge/build-passing%20(on%20our%20machine)-brightgreen">
-  <img alt="complexity" src="https://img.shields.io/badge/complexity-O(n)*-blue">
-  <img alt="written in" src="https://img.shields.io/badge/written%20in-/rust-orange">
-  <img alt="benchmarked on" src="https://img.shields.io/badge/benchmarked%20on-vibes-purple">
-  <img alt="peer review" src="https://img.shields.io/badge/peer%20reviewed-by%20uranus-lightgrey">
-</p>
 
-<sub>* n is the length of the array. it is not the length of time this takes. those are different things and we would appreciate it if you stopped bringing that up.</sub>
 
 ---
 
@@ -197,3 +196,5 @@ whatever license lets us not be liable for `crypto_sort`'s electricity bill.
 ## citation
 
 if you use optisort in academic work, please cite it as "some sorting algorithms i found on github, allegedly written by an ai swarm, i have no further information."
+
+<sub>* n is the length of the array. it is not the length of time this takes. those are different things and we would appreciate it if you stopped bringing that up.</sub>
