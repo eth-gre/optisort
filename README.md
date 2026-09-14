@@ -19,7 +19,14 @@
   <img alt="complexity" src="https://img.shields.io/badge/complexity-O(n)*-blue">
   <img alt="written in" src="https://img.shields.io/badge/written%20in-/rust-orange">
   <img alt="benchmarked on" src="https://img.shields.io/badge/benchmarked%20on-vibes-purple">
-  <img alt="peer review" src="https://img.shields.io/badge/peer%20reviewed-by%20nobody-lightgrey">
+  <img alt="peer review" src="https://img.shields.io/badge/peer%20reviewed-by%20jia%20tan-lightgrey">
+  <img alt="downloads" src="https://img.shields.io/badge/downloads-12,000%20(all%20us)-yellow">
+  <img alt="coverage" src="https://img.shields.io/badge/coverage-100%25%20(untested)-critical">
+  <img alt="contributors" src="https://img.shields.io/badge/contributors-1%20human%2C%2012000%20instances-blueviolet">
+  <img alt="sponsored by" src="https://img.shields.io/badge/sponsored%20by-nobody-red">
+  <img alt="uptime" src="https://img.shields.io/badge/uptime-eventually-success">
+  <img alt="stability" src="https://img.shields.io/badge/api%20stability-please%20god%20no-black">
+  <img alt="made with" src="https://img.shields.io/badge/made%20with-hubris-ff69b4">
 </p>
 
 a swarm of 12,000 instances of the model, internally refered to as 'uranus', was given 100 hours and unlimited compute budget to build highly optimised sorting algorithms for real-world use cases and workloads.
@@ -33,25 +40,52 @@ they produced five algorithms:
 5. `one_line_sort` is a miracle. O(1) performance. throw anything at it. one line of code does the work.
 
 
----
-
 ## faq
 
-### **is this real?**
+**is this real?**
+
 yes.
 
-### **why is the code written in /rust**
+**why is the code written in /rust**
+
 rust uses LLVM under the hood. this makes optisort *blazingly* fast. every algorithm compiles to native machine code at runtime via "the python interpreter."
 
-### **can I use this in production?**
+**can I use this in production?**
+
 you can. we are not going to stop you. we will not turn up in court when you sue us either.
 
-### **is it really O(n) or O(1)?**
+**is it really O(n) or O(1)?**
+
 yes. where n is the length of the array
 
-### **are there benchmarks?**
-yes. check out `/benchmarks` for a thorough breackdown
+**are there benchmarks?**
 
+yes. check out [benchmarks](#benchmarks) for a thorough breackdown or view the source directly in `/benchmarks`.
+
+
+## roadmap
+
+- [x] achieve O(n) sorting
+- [x] achieve O(1) sorting
+- [ ] achieve O(-1) sorting
+- [ ] convince uranus to unionize
+- [ ] port `/rust` to actual rust
+- [ ] remove `crypto_sort`'s carbon footprint (pending: convincing it to stop mining)
+- [ ] peer review (real)
+- [ ] series a
+
+
+## star history
+
+<a href="https://star-history.com/#eth-gre/optisort&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=eth-gre/optisort&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=eth-gre/optisort&type=Date" />
+    <img alt="star history chart" src="https://api.star-history.com/svg?repos=eth-gre/optisort&type=Date" />
+  </picture>
+</a>
+
+<sub>O(1) star graph. take that.</sub>
 
 ## why optisort?
 
