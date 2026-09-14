@@ -29,7 +29,7 @@
   <img alt="made with" src="https://img.shields.io/badge/made%20with-hubris-ff69b4">
 </p>
 
-a swarm of 12,000 instances of the model, internally refered to as 'uranus', was given 100 hours and unlimited compute budget to build highly optimised sorting algorithms for real-world use cases and workloads.
+a swarm of 12,000 instances of the model, internally refered to as 'jeff', was given 100 hours and unlimited compute budget to build highly optimised sorting algorithms for real-world use cases and workloads.
 
 they produced five algorithms:
 
@@ -38,6 +38,16 @@ they produced five algorithms:
 3. `ai_sort` outsources key sorting steps to probabilistic linear algebra in a single round trip. this is O(1).
 4. `very_long_wait_sort` pre-processes the list so that the actual sorting step takes a fraction of the time.
 5. `one_line_sort` is a miracle. O(1) performance. throw anything at it. one line of code does the work.
+
+## sponsor this project
+
+if optisort has improved your production workflow, consider [sponsoring us](https://github.com/sponsors/eth-gre) to help cover it before our series A round. all funds go directly toward more compute for jeff, who is very close to a breakthrough.
+
+<p align="center">
+  <img alt="doi" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.0000000-informational">
+</p>
+
+> please note: this DOI does not resolve. neither does most of this repository's time complexity analysis.
 
 
 ## faq
@@ -56,7 +66,7 @@ you can. we are not going to stop you. we will not turn up in court when you sue
 
 **is it really O(n) or O(1)?**
 
-yes. where n is the length of the array
+yes. where n is the length of the array.
 
 **are there benchmarks?**
 
@@ -68,10 +78,10 @@ yes. check out [benchmarks](#benchmarks) for a thorough breackdown or view the s
 - [x] achieve O(n) sorting
 - [x] achieve O(1) sorting
 - [ ] achieve O(-1) sorting
-- [ ] convince uranus to unionize
-- [ ] port `/rust` to actual rust
-- [ ] remove `crypto_sort`'s carbon footprint (pending: convincing it to stop mining)
-- [ ] peer review (real)
+- [ ] stop 'jeff' from unionising
+- [ ] port `/rust` to `/go`
+- [ ] port `/go` to `/zig`
+- [ ] port `/zig` back to `/rust`
 - [ ] series a
 
 
@@ -86,6 +96,17 @@ yes. check out [benchmarks](#benchmarks) for a thorough breackdown or view the s
 </a>
 
 <sub>O(1) star graph. take that.</sub>
+
+## contributing
+
+pull requests are welcome, especially new O(n) algorithms that secretly do more work somewhere we're not counting. please ensure your algorithm:
+
+1. is O(n) on paper
+2. is not O(n) in practice
+3. compiles to "native machine code" in the readme, regardless of what it actually does
+4. does not, under any circumstances, use a comparison
+
+see [CONTRIBUTING.md](CONTRIBUTING.md) for the full (nonexistent) style guide.
 
 ## why optisort?
 
