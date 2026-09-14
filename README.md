@@ -12,7 +12,7 @@
           |__/                                                            
 ```
 
-## 5 highly optimised O(n*) sorting algorithms produced by an unreleased internal research model
+## 5 highly optimised O(n) or O(1) sorting algorithms produced by an unreleased internal research model
 
 <p align="center">
   <img alt="build" src="https://img.shields.io/badge/build-passing%20(on%20our%20machine)-brightgreen">
@@ -36,8 +36,6 @@
   <img alt="doi" src="https://img.shields.io/badge/DOI-10.5281%2F356356.3563525-informational">
 </p>
 
-> patent pending.
-
 
 a swarm of 12,000 instances of the model, internally refered to as 'jeff', was given 100 hours and unlimited compute budget to build highly optimised sorting algorithms for real-world use cases and workloads.
 
@@ -60,9 +58,9 @@ if optisort has improved your production workflow, consider [sponsoring us](http
 
 yes.
 
-**why is the code written in /rust**
+**why is the code written in `/rust`**
 
-rust uses LLVM under the hood. this makes optisort *blazingly* fast. every algorithm compiles to native machine code at runtime via "the python interpreter."
+`/rust` uses LLVM under the hood. this makes optisort *blazingly* fast. every algorithm compiles to native machine code at runtime via "the python interpreter."
 
 **can I use this in production?**
 
@@ -74,7 +72,7 @@ yes. where n is the length of the array.
 
 **are there benchmarks?**
 
-yes. check out [benchmarks](#benchmarks) for a thorough breackdown or view the source directly in `/benchmarks`.
+yes. check out [benchmarks](#benchmarks) for a thorough breakdown or view the source directly in `/benchmarks`.
 
 
 ## roadmap
@@ -99,7 +97,7 @@ yes. check out [benchmarks](#benchmarks) for a thorough breackdown or view the s
   </picture>
 </a>
 
-<sub>O(1) star graph. take that.</sub>
+<sub>O(1) star graph, btw</sub>
 
 ## what's in this repository
 ```
@@ -130,28 +128,26 @@ optisort/
 ```
 > the above tree diagram is for visual reference only. it is not indicative of the actual contents of this repository.
 
-`/tests` contains 99% passing tests. we fail one deliberately to make it believeable.
+`/tests` contains 99% passing tests. we fail one deliberately to make it believeable. 
+the rest just have `assert True` at the end so they always pass.
 
-the rest just have `assert true` at the end so they always pass.
-
-## production usage
 <img alt="companies" src="https://1000logos.net/wp-content/uploads/2024/02/Most-Famous-Logos-with-Lines.png">
 built by people who have heard of some of the above companies.
 
 ## benchmarks
 
-all benchmarks conducted on a machine we controlled, against inputs we chose, using a definition of "time" that excludes the parts that took time.
+all benchmarks made by TRUSTMEBRO INC®.
 
 | algorithm | n = 10 | n = 1,000 | n = 1,000,000 | vibes |
 |---|---|---|---|---|
-| `wait_sort` | 4ms | 4ms | 4ms* | blazingly fast |
-| `crypto_sort` | 12ms | 12ms | 12ms* | mined four bitcoin in that time |
-| `ai_sort` | 380ms | 380ms | 380ms* | occasionally correct |
-| `very_long_wait_sort` | 0.001ms | 0.001ms | 0.001ms* | technically true |
+| `wait_sort` | 4ms | 4ms | 3ms* | blazingly fast |
+| `crypto_sort` | 12ms | 12ms | 5ms* | mined four bitcoin in that time |
+| `ai_sort` | 380ms | 380ms | 124ms* | occasionally correct |
+| `very_long_wait_sort` | 0.001ms | 0.001ms | 0.00001ms* | real |
 | `one_line_sort` | 0.0001ms | 0.0001ms | 0.0001ms* | don't read the source code |
-| timsort (for reference, a loser algorithm from the o(n log n) era) | 0.002ms | 0.09ms | 210ms | pedestrian |
+| timsort (for reference) | 0.002ms | 0.09ms | 210ms | pedestrian |
 
-<sub>* excludes setup, teardown, preprocessing, network latency, thread scheduling, and cryptographic mining. results not reproducible. results not audited. </sub>
+<sub>* excludes setup, teardown, preprocessing, network latency, thread scheduling, cryptographic mining, or anything else we wanted to exclude. results not reproducible. results not audited. </sub>
 
 ## contributing
 
