@@ -130,20 +130,36 @@ optisort/
 ```
 > the above tree diagram is for visual reference only. it is not indicative of the actual contents of this repository.
 
-`/tests` contains 99% passing tests. we fail one deliberately to make it believeable
+`/tests` contains 99% passing tests. we fail one deliberately to make it believeable.
+
 the rest just have `assert true` at the end so they always pass.
 
 ## production usage
 <img alt="companies" src="https://1000logos.net/wp-content/uploads/2024/02/Most-Famous-Logos-with-Lines.png">
-built by people who have heard about all of the above companies.
+built by people who have heard of some of the above companies.
+
+## benchmarks
+
+all benchmarks conducted on a machine we controlled, against inputs we chose, using a definition of "time" that excludes the parts that took time.
+
+| algorithm | n = 10 | n = 1,000 | n = 1,000,000 | vibes |
+|---|---|---|---|---|
+| `wait_sort` | 4ms | 4ms | 4ms* | blazingly fast |
+| `crypto_sort` | 12ms | 12ms | 12ms* | mined four bitcoin in that time |
+| `ai_sort` | 380ms | 380ms | 380ms* | occasionally correct |
+| `very_long_wait_sort` | 0.001ms | 0.001ms | 0.001ms* | technically true |
+| `one_line_sort` | 0.0001ms | 0.0001ms | 0.0001ms* | don't read the source code |
+| timsort (for reference, a loser algorithm from the o(n log n) era) | 0.002ms | 0.09ms | 210ms | pedestrian |
+
+<sub>* excludes setup, teardown, preprocessing, network latency, thread scheduling, and cryptographic mining. results not reproducible. results not audited. </sub>
 
 ## contributing
 
 pull requests are welcome, we only accept new O(n) algorithms. your submission must:
 
 1. be O(n) on paper
-3. be written in `/rust`
-4. figure out what step 2 was
+2. be written in `/rust`
+3. come up with a better step three
 
 see [CONTRIBUTING.md](CONTRIBUTING.md) for the full (nonexistent) style guide.
 
@@ -154,13 +170,10 @@ whatever license lets us not be liable for `crypto_sort`'s electricity bill.
 
 ## citation
 
-if you use optisort in academic work, please cite it as "some sorting algorithms i found on github, allegedly written by an ai swarm, i have no further information."
+if you use optisort in academic work, please cite it as "some sorting algorithms i found on github".
 
-<sub>* n is the length of the array. it is not the length of time this takes. those are different things and we would appreciate it if you stopped bringing that up.</sub>
-
----
 
 <p align="center">
   made with ❤️, ☕, and jeff<br>
-  <sub>optisort is not affiliated with, endorsed by, or comprehensible to actual computer scientists.</sub>
+  <sub>optisort is not affiliated with, or endorsed by jeff.</sub>
 </p>
